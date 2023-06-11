@@ -22,12 +22,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/Comp/WeatherMobileApp/WeatherApp/WeatherApp/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
 [D:/Comp/WeatherMobileApp/WeatherApp/WeatherApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.Resources.Styles.Colors.xaml
@@ -39,3 +33,21 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Comp/WeatherMobileApp/WeatherApp/WeatherApp/View/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
+
+[D:/Comp/WeatherMobileApp/WeatherApp/WeatherApp/View/MapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.View.MapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MapPage.xaml
+
+[D:/Comp/WeatherMobileApp/WeatherApp/WeatherApp/View/WeekPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = WeatherApp.View.WeekPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WeekPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WeekPage.xaml

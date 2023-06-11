@@ -975,3 +975,6 @@ D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\stamp\_G
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\resizetizer\r\drawable\sun.png
+D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_calendar.png
+D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_home.png
+D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_map.png
