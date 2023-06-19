@@ -25,8 +25,11 @@
                 <Label x:Name="lbCity" 
                        FontSize="40" 
                        HorizontalOptions="Center"
-                       TextColor="Black" 
-                       Text="Minsk"/>
+                       TextColor="Black" />
+                <Label x:Name=" lbWeatherDescription"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       TextColor="SlateGray"/>
             </StackLayout>
 
             <Image Grid.Row="2" 
@@ -47,15 +50,13 @@
                 <Label x:Name="lbHumidity" 
                        Grid.Row="1" 
                        Grid.Column="0" 
-                       HorizontalOptions="Center" 
-                       Text="88%"/>
+                       HorizontalOptions="Center" />
                 <Label x:Name="lbTemperature" 
                        Grid.Row="0" Grid.Column="1" 
                        Grid.RowSpan="2" 
                        HorizontalOptions="Center"
                        FontSize ="40"  
-                       FontAttributes="Bold" 
-                       Text="25°C"/>
+                       FontAttributes="Bold" />
                 <Image Grid.Row="0" 
                        Grid.Column="2" 
                        HorizontalOptions="Center" 
@@ -64,10 +65,33 @@
                 <Label x:Name="lbWind" 
                        Grid.Row="1" 
                        Grid.Column="2" 
-                       HorizontalOptions="Center" 
-                       Text="2 km/h"/>
+                       HorizontalOptions="Center" />
 
             </Grid>
+            <CollectionView Grid.Row="4" x:Name="CvWeather" HeightRequest="100">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"
+                                       ItemSpacing="20"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Grid.Row="4"
+                              RowDefinitions="Auto,Auto,Auto">
+                            <Image Grid.Row="0"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   HeightRequest="50"
+                                   WidthRequest="50"/>
+                            <Label Grid.Row="1"
+                                   FontSize="Large"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Row="2"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </Grid>
     </ScrollView>
 
