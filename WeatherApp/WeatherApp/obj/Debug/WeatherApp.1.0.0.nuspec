@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WeatherApp</id>
+    <version>1.0.0</version>
+    <authors>WeatherApp</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0-android33.0">
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Android.Glide" version="4.13.2.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Browser" version="1.4.0.3" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.15" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.5.1.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Navigation.Common" version="2.5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Navigation.Fragment" version="2.5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Navigation.Runtime" version="2.5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Navigation.UI" version="2.5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Security.SecurityCrypto" version="1.1.0-alpha03" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Google.Android.Material" version="1.7.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Google.Crypto.Tink.Android" version="1.7.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0-ios16.1">
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0-maccatalyst16.1">
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0-windows10.0.19041">
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Graphics.Win2D.WinUI.Desktop" version="7.0.86" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.WindowsAppSDK" version="1.2.221209.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-android\WeatherApp.runtimeconfig.json" target="lib\net7.0-android33.0\WeatherApp.runtimeconfig.json" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-android\WeatherApp.dll" target="lib\net7.0-android33.0\WeatherApp.dll" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-android\WeatherApp.xml" target="lib\net7.0-android33.0\WeatherApp.xml" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-ios\iossimulator-x64\WeatherApp.runtimeconfig.json" target="lib\net7.0-ios16.1\WeatherApp.runtimeconfig.json" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-ios\iossimulator-x64\WeatherApp.dll" target="lib\net7.0-ios16.1\WeatherApp.dll" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\WeatherApp.runtimeconfig.json" target="lib\net7.0-maccatalyst16.1\WeatherApp.runtimeconfig.json" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\WeatherApp.dll" target="lib\net7.0-maccatalyst16.1\WeatherApp.dll" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\WeatherApp.runtimeconfig.json" target="lib\net7.0-windows10.0.19041\WeatherApp.runtimeconfig.json" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\WeatherApp.dll" target="lib\net7.0-windows10.0.19041\WeatherApp.dll" />
+    <file src="D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net7.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

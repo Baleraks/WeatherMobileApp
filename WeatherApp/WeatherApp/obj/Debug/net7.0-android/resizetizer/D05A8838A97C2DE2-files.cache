@@ -1,4 +1,6 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_calendar.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\cloud.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_calendar.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_geolocation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_humidity.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_map.png

@@ -10,14 +10,10 @@
             <StackLayout Grid.Row="0" 
                          Margin="20,20,20,0" 
                          Orientation="Horizontal">
-                <Frame Padding="10" 
-                       CornerRadius="35" 
-                       HasShadow="True" 
-                       BorderColor="CadetBlue" 
-                       BackgroundColor="CadetBlue">
-                    <Label Text="Locate me" 
-                           FontSize="Default"/>
-                </Frame>
+                <ImageButton Source="icons8_geolocation.png" 
+                             HeightRequest="30" 
+                             WidthRequest="30" 
+                             HorizontalOptions="StartAndExpand"/>
                 <ImageButton Source="icons8_search.png" 
                              HeightRequest="30" 
                              WidthRequest="30" 
@@ -31,18 +27,13 @@
                        HorizontalOptions="Center"
                        TextColor="Black" 
                        Text="Minsk"/>
-                <Label x:Name="lbWeather" 
-                       FontSize="15" 
-                       HorizontalOptions="Center" 
-                       TextColor="Black" 
-                       Text="Clear sky"/>
             </StackLayout>
 
             <Image Grid.Row="2" 
                    x:Name="ImgWeatherIcon" 
                    VerticalOptions="Center" 
                    HeightRequest="300" 
-                   Source="sun.png"/>
+                   Source="cloud.png"/>
 
             <Grid Grid.Row="3" 
                   RowDefinitions="Auto,Auto" 
@@ -57,15 +48,14 @@
                        Grid.Row="1" 
                        Grid.Column="0" 
                        HorizontalOptions="Center" 
-                       Text="88"/>
+                       Text="88%"/>
                 <Label x:Name="lbTemperature" 
                        Grid.Row="0" Grid.Column="1" 
                        Grid.RowSpan="2" 
                        HorizontalOptions="Center"
                        FontSize ="40"  
                        FontAttributes="Bold" 
-                       Text="25"/>
-
+                       Text="25°C"/>
                 <Image Grid.Row="0" 
                        Grid.Column="2" 
                        HorizontalOptions="Center" 
@@ -75,7 +65,7 @@
                        Grid.Row="1" 
                        Grid.Column="2" 
                        HorizontalOptions="Center" 
-                       Text="88"/>
+                       Text="2 km/h"/>
 
             </Grid>
         </Grid>

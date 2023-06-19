@@ -9,15 +9,15 @@
     <TabBar Shell.TabBarBackgroundColor="CadetBlue" Shell.TabBarTitleColor="LightBlue">
         <ShellContent
            
-            Title="MainPage"
+            Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             Icon="icons8_home.png"/>
         <ShellContent
-            Title="MapPage"
+            Title="Map"
             ContentTemplate="{DataTemplate view:MapPage}"
             Icon="icons8_map.png"/>
         <ShellContent
-            Title="WeekPage"
+            Title="Week"
             ContentTemplate="{DataTemplate view:WeekPage}"
             Icon="icons8_calendar.png"/>
 
