@@ -94,6 +94,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "UtcTimeLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -215,6 +219,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UtcTimeLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -282,6 +290,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UtcTimeLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -366,6 +378,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UtcTimeLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

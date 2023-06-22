@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bGkcPCBc1kPUDKE3fsQrziUS2Th+Y7Cr8HP4Bznn4tXydJOT+pgT7zSsMPX5Il6HkAMcWCJVZ/VyGFTZBpN5Fg==",
+  "dgSpecHash": "5YPcKXmUPFLxmkZU5PP02qYdmTqoEx4nAr7vHH1faF96hWdYxUot2l3iHFuMdMqprk7c7hNjFRlb/+kmA70KWg==",
   "success": true,
   "projectFilePath": "D:\\Comp\\WeatherMobileApp\\WeatherApp\\WeatherApp\\WeatherApp.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\utctimelibrary\\1.0.0\\utctimelibrary.1.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",
