@@ -39,7 +39,7 @@ namespace WeatherApp.Model
         public Rain rain { get; set; }
         public Sys sys { get; set; }
         public string dt_txt { get; set; }
-    }
+     }
 
     public class Main
     {

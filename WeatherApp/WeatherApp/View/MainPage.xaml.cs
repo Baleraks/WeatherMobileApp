@@ -1,17 +1,18 @@
-﻿using WeatherApp.Helpers;
+﻿using System.Collections.ObjectModel;
+using WeatherApp.Helpers;
 
 namespace WeatherApp;
 
 public partial class MainPage : ContentPage
 {
-    public List<Model.List> WeatherList;
+    public ObservableCollection<Model.List> WeatherList;
     private double latitude;
     private double longitude;
 
 	public MainPage()
 	{
 		InitializeComponent();
-        WeatherList = new List<Model.List>();
+        WeatherList = new ObservableCollection<Model.List>();
 	}
 
     protected async override void OnAppearing()

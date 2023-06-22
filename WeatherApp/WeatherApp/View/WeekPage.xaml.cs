@@ -1,17 +1,18 @@
 using WeatherApp.Helpers;
 using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace WeatherApp.View;
 
 public partial class WeekPage : ContentPage
 {
-    public List<Model.List> WeatherList;
+    public ObservableCollection<Model.List> WeatherList;
     private double latitude;
     private double longitude;
     public WeekPage()
 	{
 		InitializeComponent();
-        WeatherList = new List<Model.List>();
+        WeatherList = new ObservableCollection<Model.List>();
     }
     protected async override void OnAppearing()
     {
@@ -40,6 +41,7 @@ public partial class WeekPage : ContentPage
         {
             WeatherList.Add(item);
         }
-        CvWeather.ItemsSource = WeatherList;
+        IEnumerable<Model.List> readyList = WeatherList.Where(dt => dt.dt_txt.Contains("15:00:00"));
+        CvWeather.ItemsSource = readyList;
     }
 }
