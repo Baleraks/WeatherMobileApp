@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:WeatherApp.ViewModels;"
              x:Class="WeatherApp.MainPage">
-
+    <ContentPage.BindingContext>
+        <ViewModels:MainViewModel/>
+    </ContentPage.BindingContext>
     <ScrollView BackgroundColor="White">
         <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
               RowSpacing="20">
@@ -14,12 +17,12 @@
                              HeightRequest="30" 
                              WidthRequest="30" 
                              HorizontalOptions="StartAndExpand"
-                             Clicked="ImageButton_Clicked_1"/>
+                             Command="{Binding MainLocation}"/>
                 <ImageButton Source="icons8_search.png" 
                              HeightRequest="30" 
                              WidthRequest="30" 
                              HorizontalOptions="EndAndExpand"
-                             Clicked="ImageButton_Clicked"/>
+                             Command="{Binding CitySearch}"/>
             </StackLayout>
 
             <StackLayout Grid.Row="1" 
@@ -27,18 +30,21 @@
                 <Label x:Name="lbCity" 
                        FontSize="40" 
                        HorizontalOptions="Center"
-                       TextColor="Black" />
+                       TextColor="Black" 
+                       Text="{Binding City}"/>
                 <Label x:Name=" lbWeatherDescription"
                        FontSize="Medium"
                        HorizontalOptions="Center"
-                       TextColor="SlateGray"/>
+                       TextColor="SlateGray"
+                       Text="{Binding WeatherDescription}"/>
             </StackLayout>
 
             <Image Grid.Row="2" 
                    x:Name="ImgWeatherIcon" 
                    VerticalOptions="Start" 
                    HeightRequest="250"
-                   WidthRequest="250" />
+                   WidthRequest="250" 
+                   Source="{Binding Image}"/>
 
             <Grid Grid.Row="3" 
                   RowDefinitions="Auto,Auto" 
@@ -52,13 +58,15 @@
                 <Label x:Name="lbHumidity" 
                        Grid.Row="1" 
                        Grid.Column="0" 
-                       HorizontalOptions="Center" />
+                       HorizontalOptions="Center"
+                        Text="{Binding Humidity}"/>
                 <Label x:Name="lbTemperature" 
                        Grid.Row="0" Grid.Column="1" 
                        Grid.RowSpan="2" 
                        HorizontalOptions="Center"
                        FontSize ="40"  
-                       FontAttributes="Bold" />
+                       FontAttributes="Bold" 
+                       Text="{Binding Temperature}"/>
                 <Image Grid.Row="0" 
                        Grid.Column="2" 
                        HorizontalOptions="Center" 
@@ -67,10 +75,11 @@
                 <Label x:Name="lbWind" 
                        Grid.Row="1" 
                        Grid.Column="2" 
-                       HorizontalOptions="Center" />
+                       HorizontalOptions="Center" 
+                        Text="{Binding Wind}"/>
 
             </Grid>
-            <CollectionView Grid.Row="4" x:Name="CvWeather" HeightRequest="100">
+            <CollectionView Grid.Row="4" x:Name="CvWeather" ItemsSource="{Binding WeatherList}" HeightRequest="100">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"
                                        ItemSpacing="20"/>

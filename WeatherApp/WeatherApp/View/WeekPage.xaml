@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:WeatherApp.ViewModels;"
              x:Class="WeatherApp.View.WeekPage"
              Title="WeekPage">
+    <ContentPage.BindingContext>
+        <ViewModels:WeekViewModel/>
+    </ContentPage.BindingContext>
     <ScrollView BackgroundColor="White">
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
-              RowSpacing="20">
-
-            
-            <CollectionView Grid.Row="0" x:Name="CvWeather" HeightRequest="1000">
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical"
+        <CollectionView x:Name="CvWeather" ItemsSource="{Binding WeatherList}" HeightRequest="100">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
                                        ItemSpacing="20"/>
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Grid.Column="0"
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Grid.Column="0"
                               ColumnDefinitions="Auto,Auto,Auto">
-                            <Image Grid.Column="0"
+                        <Image Grid.Column="0"
                                    HorizontalOptions="Center"
                                    HeightRequest="50"
                                    WidthRequest="50"
                                    Source="{Binding weather[0].fullIconUrl}"/>
-                            <Label Grid.Column="1"
+                        <Label Grid.Column="1"
                                    FontSize="Large"
                                    HorizontalOptions="Center"
                                    Text="{Binding main.temperature}"/>
-                            <Label Grid.Column="2"
+                        <Label Grid.Column="2"
                                    Margin="10"
                                    FontSize="Large"
                                    HorizontalOptions="Center"
                                    Text="{Binding dt_txt}"/>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </ScrollView>
 </ContentPage>

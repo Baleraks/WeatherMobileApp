@@ -6,8 +6,12 @@ namespace WeatherApp.Model
     public class City
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public Coord coord { get; set; }
+
+        [JsonProperty("name")]
+        public string CityName { get; set; }
+
+        [JsonProperty("coord")]
+        public Coordinates Location { get; set; }
         public string country { get; set; }
         public int population { get; set; }
         public int timezone { get; set; }
@@ -20,10 +24,13 @@ namespace WeatherApp.Model
         public int all { get; set; }
     }
 
-    public class Coord
+    public class Coordinates
     {
-        public double lat { get; set; }
-        public double lon { get; set; }
+        [JsonProperty("lat")]
+        public double Latitude { get; set; }
+
+        [JsonProperty("lon")]
+        public double Longitude { get; set; }
     }
 
     public class List
@@ -39,6 +46,12 @@ namespace WeatherApp.Model
         public Rain rain { get; set; }
         public Sys sys { get; set; }
         public string dt_txt { get; set; }
+
+        public DateTime WeatherDate { get 
+            {
+                return Convert.ToDateTime(dt_txt);
+            } 
+        }
      }
 
     public class Main
