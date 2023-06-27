@@ -11,7 +11,7 @@ namespace WeatherApp.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        private ObservableCollection<Model.List> _weatherList;
+        private ObservableCollection<Model.WeatherInfo> _weatherList;
         private double _lotitude;
         private double _longitude;
         private string _city;
@@ -57,7 +57,7 @@ namespace WeatherApp.ViewModels
                 OnPropertyChanged();
             }
         }
-        public ObservableCollection<Model.List> WeatherList
+        public ObservableCollection<Model.WeatherInfo> WeatherList
         {
             get { return _weatherList; }
             set
@@ -125,25 +125,13 @@ namespace WeatherApp.ViewModels
         public async Task GetWeatherDataByCity(string city)
         {
             var cityLocation = await ApiHelper.GetInstance().GetWeather(city);
-            WeatherList = new ObservableCollection<Model.List>(cityLocation.list);
-            Image = cityLocation.list[0].weather[0].fullIconUrl;
-            WeatherDescription = cityLocation.list[0].weather[0].description;
-            Temperature = cityLocation.list[0].main.temperature + "°C";
-            Humidity = cityLocation.list[0].main.humidity + "%";
-            Wind = cityLocation.list[0].wind.speed + "km/h";
-            City = cityLocation.city.CityName;
+            UpdateForm(cityLocation);
         }
 
         public async Task GetWeatherDataByLocation(double latitude, double longitude)
         {
             var weatherLocation = await ApiHelper.GetInstance().GetWeather(latitude, longitude);
-            WeatherList = new ObservableCollection<Model.List>(weatherLocation.list);
-            Image = weatherLocation.list[0].weather[0].fullIconUrl;
-            WeatherDescription = weatherLocation.list[0].weather[0].description;
-            Temperature = weatherLocation.list[0].main.temperature + "°C";
-            Humidity = weatherLocation.list[0].main.humidity + "%";
-            Wind= weatherLocation.list[0].wind.speed + "km/h";
-            City= weatherLocation.city.CityName;
+            UpdateForm(weatherLocation);
         }
 
         private async void SearchCity()
@@ -155,6 +143,16 @@ namespace WeatherApp.ViewModels
             }
         }
 
+        public void UpdateForm(dynamic weatherLocation)
+        {
+            WeatherList = new ObservableCollection<Model.WeatherInfo>(weatherLocation.list);
+            Image = weatherLocation.list[0].weather[0].fullIconUrl;
+            WeatherDescription = weatherLocation.list[0].weather[0].description;
+            Temperature = weatherLocation.list[0].main.temperature + "°C";
+            Humidity = weatherLocation.list[0].main.humidity + "%";
+            Wind = weatherLocation.list[0].wind.speed + "km/h";
+            City = weatherLocation.city.CityName;
+        }
         private async void CurrentLocation ()
         {
             await GetLocation();

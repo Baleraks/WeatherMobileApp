@@ -8,7 +8,7 @@
         <ViewModels:WeekViewModel/>
     </ContentPage.BindingContext>
     <ScrollView BackgroundColor="White">
-        <CollectionView x:Name="CvWeather" ItemsSource="{Binding WeatherList}" HeightRequest="100">
+        <CollectionView x:Name="CvWeather" ItemsSource="{Binding WeatherList}" HeightRequest="1000">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical"
                                        ItemSpacing="20"/>

@@ -14,6 +14,7 @@
         <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="UtcTimeLibrary" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="Xamarin.Android.Glide" version="4.13.2.2" exclude="Build,Analyzers" />
         <dependency id="Xamarin.AndroidX.Browser" version="1.4.0.3" exclude="Build,Analyzers" />
         <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.15" exclude="Build,Analyzers" />
@@ -34,6 +35,7 @@
         <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="UtcTimeLibrary" version="1.0.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net7.0-maccatalyst16.1">
         <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
@@ -43,6 +45,7 @@
         <dependency id="Microsoft.Extensions.Logging.Debug" version="7.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Maui.Graphics" version="7.0.86" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="UtcTimeLibrary" version="1.0.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net7.0-windows10.0.19041">
         <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
@@ -54,6 +57,7 @@
         <dependency id="Microsoft.Maui.Graphics.Win2D.WinUI.Desktop" version="7.0.86" exclude="Build,Analyzers" />
         <dependency id="Microsoft.WindowsAppSDK" version="1.2.221209.1" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="UtcTimeLibrary" version="1.0.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

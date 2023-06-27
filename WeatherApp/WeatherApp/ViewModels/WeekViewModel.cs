@@ -11,8 +11,8 @@ namespace WeatherApp.ViewModels
 {
     public class WeekViewModel : BaseViewModel
     {
-        private ObservableCollection<Model.List> _weatherList;
-        public ObservableCollection<Model.List> WeatherList
+        private ObservableCollection<Model.WeatherInfo> _weatherList;
+        public ObservableCollection<Model.WeatherInfo> WeatherList
         { 
             get { return _weatherList; }
             set 
@@ -61,7 +61,7 @@ namespace WeatherApp.ViewModels
             TimeSpan dayTime;
             TimeSpan.TryParse("15:00:00", out dayTime);
             var weatherLocation = await ApiHelper.GetInstance().GetWeather(latitude, longitude);
-            WeatherList = new ObservableCollection<Model.List>(weatherLocation.list.Where(dt => dt.WeatherDate.TimeOfDay == dayTime));
+            WeatherList = new ObservableCollection<Model.WeatherInfo>(weatherLocation.list.Where(dt => dt.WeatherDate.TimeOfDay == dayTime));
         }
 
 

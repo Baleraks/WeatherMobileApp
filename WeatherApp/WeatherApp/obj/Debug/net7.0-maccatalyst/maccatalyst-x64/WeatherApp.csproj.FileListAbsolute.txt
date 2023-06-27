@@ -267,3 +267,4 @@ D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-maccatalyst\macc
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\WeatherApp.pdb
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\WeatherApp.genruntimeconfig.cache
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\WeatherApp.dll
+D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\UtcTimeLibrary.dll

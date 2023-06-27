@@ -33,7 +33,7 @@ namespace WeatherApp.Model
         public double Longitude { get; set; }
     }
 
-    public class List
+    public class WeatherInfo
     {
         public int dt { get; set; }
         public string dateTime => UtcTimeLibrary.UtcTimeStamp.ConvertToUtc(dt);
@@ -74,12 +74,12 @@ namespace WeatherApp.Model
         public double _3h { get; set; }
     }
 
-    public class Root
+    public class MainInfo
     {
         public string cod { get; set; }
         public int message { get; set; }
         public int cnt { get; set; }
-        public List<List> list { get; set; }
+        public List<WeatherInfo> list { get; set; }
         public City city { get; set; }
     }
 

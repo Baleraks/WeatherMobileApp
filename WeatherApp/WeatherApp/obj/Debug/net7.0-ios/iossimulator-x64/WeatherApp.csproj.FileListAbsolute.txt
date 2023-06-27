@@ -277,3 +277,4 @@ D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-ios\iossimulator
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-ios\iossimulator-x64\WeatherApp.pdb
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-ios\iossimulator-x64\WeatherApp.genruntimeconfig.cache
 D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\obj\Debug\net7.0-ios\iossimulator-x64\ref\WeatherApp.dll
+D:\Comp\WeatherMobileApp\WeatherApp\WeatherApp\bin\Debug\net7.0-ios\iossimulator-x64\UtcTimeLibrary.dll

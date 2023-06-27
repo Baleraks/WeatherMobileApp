@@ -13,8 +13,8 @@
             ContentTemplate="{DataTemplate local:MainPage}"
             Icon="icons8_home.png"/>
         <ShellContent
-            Title="Map"
-            ContentTemplate="{DataTemplate view:MapPage}"
+            Title="Form"
+            ContentTemplate="{DataTemplate view:FormPage}"
             Icon="icons8_map.png"/>
         <ShellContent
             Title="Week"
